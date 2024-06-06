@@ -120,7 +120,6 @@ public class FrameworkAnnotationProcessor extends AbstractProcessor {
         method.body.stats = method.body.stats.prepend(printStatement);
         method.body.stats = method.body.stats.prepend(autumnFrameworkRunner);
     }
-
     private static <T> T jbUnwrap(Class<? extends T> iface, T wrapper) {
         T unwrapped = null;
         try {
